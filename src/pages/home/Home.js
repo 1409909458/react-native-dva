@@ -36,7 +36,7 @@ class Home extends Component {
     /**
      * 页面跳转，传值
      */
-    navigation.navigate('HomeNext', { name: '我是下一页' });
+    navigation.navigate('UserCenter', { name: '用户中心',id:'1' });
   }
   
 
@@ -44,7 +44,7 @@ class Home extends Component {
     const { name } = this.props;
     return (
       <View style={styles.wrapper}>
-        <Text onPress={this.goNext}>{name}</Text>
+        <Text onPress={this.goNext}>跳转到用户中心</Text>
       </View>
     );
   }
